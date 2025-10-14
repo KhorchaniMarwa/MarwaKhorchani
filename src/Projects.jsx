@@ -1,40 +1,58 @@
 import React from "react";
 import "./Projects.css";
-//import astroImage from "./astro.jpg"; // place your project image in src folder
+
+
+const projects = [
+    {
+        title: "Shortest Path Finder",
+        description:
+            "A web app using Dijkstra's algorithm to find the shortest path between stations, integrated with maps and transport modes.",
+        tech: "React, Symfony, MySQL, Leaflet.js",
+        //image: project1,
+        link: "#",
+    },
+    {
+        title: "Competitive Programming Platform",
+        description:
+            "A platform for hosting competitions with a custom judge system and real-time leaderboard.",
+        tech: "React, Node.js, MySQL",
+        //image: project2,
+        link: "#",
+    },
+    {
+        title: "Linux Workshop Game",
+        description:
+            "A small game developed for workshops teaching Linux distributions and open source culture.",
+        tech: "C++, SDL, Linux",
+        image: null,
+        link: "#",
+    },
+];
 
 const Projects = () => {
     return (
-        <section className="projects-section" id="projects">
-            <h2 className="section-title">My Projects</h2>
+        <section className="projects" id="projects">
+            <h2 className="projects-title">🚀 My Projects</h2>
             <div className="projects-container">
-
-                <div className="project-card">
-
-                    <div className="project-content">
-                        <h3>AstroPredict</h3>
-                        <p>
-                            A web application that predicts the stability of asteroid orbits and estimates
-                            their future 3D positions using orbital elements. It combines a <b>PyTorch</b>
-                            machine learning model with a <b>FastAPI</b> backend and a <b>React</b> frontend
-                            to deliver real-time predictions.
-                        </p>
-                        <ul className="tech-list">
-                            <li>React</li>
-                            <li>FastAPI</li>
-                            <li>PyTorch</li>
-                            <li>Rebound</li>
-                        </ul>
-                        <a
-                            href="https://github.com/KhorchaniMarwa/AstroPredict"
-                            className="project-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            View on GitHub
-                        </a>
+                {projects.map((project, index) => (
+                    <div key={index} className="project-card">
+                        {project.image && (
+                            <img
+                                src={project.image}
+                                alt={project.title}
+                                className="project-img"
+                            />
+                        )}
+                        <h3>{project.title}</h3>
+                        <p>{project.description}</p>
+                        <p className="tech-used">Tech: {project.tech}</p>
+                        {project.link && (
+                            <a href={project.link} className="project-link">
+                                View Project
+                            </a>
+                        )}
                     </div>
-                </div>
-
+                ))}
             </div>
         </section>
     );

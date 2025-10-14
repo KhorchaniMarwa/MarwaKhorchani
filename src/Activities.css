@@ -1,0 +1,90 @@
+.activities {
+    background-color: #0a0014;
+    color: #e6d8ff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.activities-title {
+    font-size: 2.3rem;
+    color: #c28bff;
+    text-shadow: 0 0 15px #a259ff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.activities-photo {
+    flex: 1;
+    max-width: 350px; /* increased max width */
+    text-align: center;
+}
+.profile-img {
+    width: 300px;
+    height: 450px; /* bigger rectangle */
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #a259ff88;
+    border: 2px solid #a259ff33;
+}
+
+.activities-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.activity-card {
+    background: rgba(26, 0, 51, 0.8);
+    border: 1px solid #a259ff33;
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 0 20px #a259ff33;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #a259ff88;
+}
+
+.activity-card h3 {
+    color: #b47cff;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #d1baff;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activities-content {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 170px;
+    }
+}

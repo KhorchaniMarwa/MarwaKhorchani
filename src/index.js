@@ -7,17 +7,19 @@ import reportWebVitals from './reportWebVitals';
 import Projects from "./Projects";
 import profilePic from "./marwa.jpeg";
 import About from "./About";
-import Experience from "./Education";
 import Education from "./Education";
 import Certifications from "./Certifications";
+import Activities   from "./Activities";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <Navbar />
         <Home />
         <About />
+        <Projects />
         <Education />
         <Certifications />
+        <Activities />
 
 
 
