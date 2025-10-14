@@ -9,6 +9,7 @@ import profilePic from "./marwa.jpeg";
 import About from "./About";
 import Experience from "./Education";
 import Education from "./Education";
+import Certifications from "./Certifications";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
@@ -16,6 +17,8 @@ root.render(
         <Home />
         <About />
         <Education />
+        <Certifications />
+
 
 
 
