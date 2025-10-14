@@ -1,0 +1,138 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(circle at top left, #12001a, #1a0026, #0b0014);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    color: #c77dff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 25px #a855f7, 0 0 50px rgba(168, 85, 247, 0.5);
+}
+
+.hero-quote {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    color: #d8b4fe;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: #c3a3f0;
+    margin-bottom: 2.2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    border: none;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #a855f7;
+    color: #0b0014;
+    box-shadow: 0 0 20px #a855f7;
+}
+
+.btn-primary:hover {
+    background: #9333ea;
+    box-shadow: 0 0 30px #a855f7;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #c77dff;
+    border: 2px solid #c77dff;
+}
+
+.btn-secondary:hover {
+    background: rgba(199, 125, 255, 0.1);
+    box-shadow: 0 0 20px #c77dff;
+}
+
+/* Animated background elements */
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.animated-bg span {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: rgba(199, 125, 255, 0.1);
+    animation: move 22s linear infinite;
+    bottom: -150px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(199, 125, 255, 0.3);
+}
+
+.animated-bg span:nth-child(1) {
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.animated-bg span:nth-child(2) {
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 4s;
+    animation-duration: 25s;
+}
+
+.animated-bg span:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 2s;
+}
+
+.animated-bg span:nth-child(4) {
+    left: 45%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 6s;
+    animation-duration: 30s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}

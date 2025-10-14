@@ -1,0 +1,121 @@
+/* Navbar.css - Purple Neon Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0b0014; /* Deep purple background */
+    color: #ffffff;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #240046, #3c096c, #5a189a);
+    color: #ffffff;
+    position: fixed;
+    width: 95%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+    padding: 0.5rem 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    transform: translateX(-50%) translateY(-2px);
+    box-shadow: 0 0 35px rgba(199, 125, 255, 0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d8b4fe;
+    text-shadow: 0 0 15px #a855f7;
+}
+
+.highlight {
+    color: #c77dff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #e9d8fd;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(168, 85, 247, 0.2);
+    color: #c77dff;
+    box-shadow: 0 0 10px rgba(199, 125, 255, 0.4);
+}
+
+/* Hamburger menu - mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #e9d8fd;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        right: 0;
+        top: 80px;
+        height: calc(100% - 80px);
+        background: linear-gradient(180deg, #240046, #3c096c);
+        flex-direction: column;
+        width: 220px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        border-radius: 0 0 0 15px;
+        padding-top: 1rem;
+        box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
