@@ -10,6 +10,8 @@ import About from "./About";
 import Education from "./Education";
 import Certifications from "./Certifications";
 import Activities   from "./Activities";
+import Contact from "./Contact";
+import Footer from "./Footer";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
@@ -20,6 +22,9 @@ root.render(
         <Education />
         <Certifications />
         <Activities />
+        <Contact />
+        <Footer />
+
 
 
 
