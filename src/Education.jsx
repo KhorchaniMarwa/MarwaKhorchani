@@ -14,8 +14,7 @@ const Education = () => {
                         <p className="degree">Engineering Degree in Applied Computer Science</p>
                         <span className="date">2023 – Present</span>
                         <p>
-                            Focused on software engineering, cloud computing, and artificial intelligence.
-                            Active member and president of the ACM ENISo club, organizing programming events and workshops.
+                            Focused on software engineering, computer networks, and artificial intelligence, with comprehensive coursework covering the fundamentals of computer science from hardware to software. Engaged in multiple academic and practical projects to strengthen technical and problem-solving skills.
                         </p>
                     </div>
                 </div>
@@ -27,8 +26,7 @@ const Education = () => {
                         <p className="degree">Preparatory Classes for Engineering Studies</p>
                         <span className="date">2021 – 2023</span>
                         <p>
-                            Intensive coursework in mathematics, physics, and chimstry,
-                            building a strong foundation for engineering studies.
+                            Undertook rigorous coursework in mathematics, physics, and chemistry, establishing a strong foundation for engineering studies. Achieved a national exam rank of 230 out of more than 1,200 candidates.
                         </p>
                     </div>
                 </div>

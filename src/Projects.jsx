@@ -4,25 +4,24 @@ import "./Projects.css";
 
 const projects = [
     {
-        title: "Shortest Path Finder",
-        description:
-            "A web app using Dijkstra's algorithm to find the shortest path between stations, integrated with maps and transport modes.",
-        tech: "React, Symfony, MySQL, Leaflet.js",
-        //image: project1,
-        link: "#",
+        title: "AstroPredict",
+        description: "Predicts asteroid orbit stability and future positions using a PyTorch ML model, FastAPI backend, and React frontend. Outputs stability probability, classification, and predicted coordinates.",
+        tech: "Python, React, FastAPI, PyTorch",
+        // image: astroPredictImage, // optional
+        link: "https://github.com/KhorchaniMarwa/AstroPredict"
     },
     {
-        title: "Competitive Programming Platform",
+        title: "Few-Shot Classification of Thermal Images Using Prototypical Networks",
         description:
-            "A platform for hosting competitions with a custom judge system and real-time leaderboard.",
-        tech: "React, Node.js, MySQL",
+            "A semester project applying Few-Shot Learning with Prototypical Networks to classify thermal images of induction motors, handling limited data scenarios.",
+        tech: "PyTorch, NumPy, Matplotlib, Scikit-learn",
         //image: project2,
         link: "#",
     },
     {
-        title: "Linux Workshop Game",
+        title: "Build My Own Shell",
         description:
-            "A small game developed for workshops teaching Linux distributions and open source culture.",
+            "Inspired by the 'Do It Yourself' principle, this project explores low-level programming in C to deepen my understanding of memory management and operating system interaction.",
         tech: "C++, SDL, Linux",
         image: null,
         link: "#",

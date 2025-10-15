@@ -53,8 +53,8 @@ const Contact = () => {
 
                 <div className="contact-info">
                     <h3>Other Contacts</h3>
-                    <p>📧 Email: youremail@example.com</p>
-                    <p>📞 Phone: +123456789</p>
+                    <p>📧 Email: mrwkhorchani@gmail.com</p>
+                    <p>📞 Phone: +216 27335873</p>
                     <div className="social-icons">
                         <a href="https://github.com/KhorchaniMarwa" target="_blank" rel="noreferrer">
                             <FaGithub className="icon" />

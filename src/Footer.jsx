@@ -35,6 +35,7 @@ const Footer = () => {
             <p className="copyright">
                 © {new Date().getFullYear()} Marwa Khorchani. All rights reserved.
             </p>
+            <p className="funny-footer">Crafted with ❤️ debugged with tears 😅</p>
 
             <button className="back-to-top" onClick={scrollToTop}>
                 Back to Top ↑
