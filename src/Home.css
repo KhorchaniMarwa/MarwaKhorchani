@@ -1,3 +1,4 @@
+/* ---------- HERO SECTION ---------- */
 .hero {
     position: relative;
     height: 100vh;
@@ -8,6 +9,7 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    font-family: 'Inter', sans-serif;
 }
 
 .hero-overlay {
@@ -28,6 +30,7 @@
     font-size: 1.6rem;
     margin-bottom: 1.2rem;
     color: #d8b4fe;
+    text-shadow: 0 0 10px rgba(216, 180, 254, 0.5);
 }
 
 .hero-desc {
@@ -37,10 +40,13 @@
     line-height: 1.6;
 }
 
+/* ---------- BUTTONS ---------- */
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .btn-primary,
@@ -51,17 +57,19 @@
     border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 600;
 }
 
 .btn-primary {
-    background: #a855f7;
-    color: #0b0014;
+    background: linear-gradient(90deg, #a855f7, #9333ea);
+    color: #fff;
     box-shadow: 0 0 20px #a855f7;
 }
 
 .btn-primary:hover {
-    background: #9333ea;
+    background: linear-gradient(90deg, #9333ea, #7e22ce);
     box-shadow: 0 0 30px #a855f7;
+    transform: scale(1.05);
 }
 
 .btn-secondary {
@@ -71,11 +79,63 @@
 }
 
 .btn-secondary:hover {
-    background: rgba(199, 125, 255, 0.1);
+    background: rgba(199, 125, 255, 0.15);
     box-shadow: 0 0 20px #c77dff;
+    transform: scale(1.05);
 }
 
-/* Animated background elements */
+/* ---------- CV EMOJI BUTTON ---------- */
+.btn-emoji {
+    background: rgba(199, 125, 255, 0.1);
+    color: #c77dff;
+    border: 2px solid #c77dff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #a259ff33;
+}
+
+.btn-emoji:hover {
+    background: rgba(199, 125, 255, 0.25);
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #b47cff88;
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.social-icons a {
+    background-color: rgba(162, 89, 255, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #c28bff;
+    font-size: 1.3rem;
+    text-decoration: none;
+    box-shadow: 0 0 10px #a259ff33;
+}
+
+.social-icons a:hover {
+    background-color: rgba(162, 89, 255, 0.3);
+    color: #b47cff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #b47cff88;
+}
+
+/* ---------- ANIMATED BACKGROUND ---------- */
 .animated-bg {
     position: absolute;
     top: 0;
