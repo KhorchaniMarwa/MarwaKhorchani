@@ -1,10 +1,12 @@
+/* ---------- ABOUT SECTION ---------- */
 .about-me {
-    background-color: #0d001a;
+    background: radial-gradient(circle at top left, #12001a, #1a0026, #0b0014);
     color: #e0d5ff;
     padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 .about-me-content {
@@ -14,65 +16,111 @@
     max-width: 1000px;
     gap: 50px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about-me-photo {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 50%; /* now fully round */
     object-fit: cover;
-    border: 3px solid #a259ff;
-    box-shadow: 0 0 20px #a259ff;
+    border: 4px solid #a259ff;
+    box-shadow: 0 0 25px rgba(162, 89, 255, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(162, 89, 255, 0.9);
 }
 
 .about-me-text {
     max-width: 600px;
+    text-align: left;
 }
 
 .about-me-text h2 {
     font-size: 2.2rem;
     color: #c28bff;
     margin-bottom: 20px;
-    text-shadow: 0 0 8px #a259ff;
+    text-shadow: 0 0 10px rgba(162, 89, 255, 0.7);
 }
 
 .about-me-text p {
     font-size: 1.1rem;
     line-height: 1.7;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    color: #e0d5ff;
 }
 
 /* ---------- CONTACT BUTTON ---------- */
 .contact-btn {
-    background-color: #a259ff;
+    background: linear-gradient(135deg, #a259ff, #8b3dff);
     border: none;
-    padding: 12px 25px;
+    padding: 14px 30px;
     color: #fff;
     font-size: 1rem;
     border-radius: 30px;
-    transition: background 0.3s ease, transform 0.2s ease;
-    text-decoration: none; /* removes underline */
-    cursor: pointer; /* hand cursor */
-    display: inline-block; /* makes link behave like a button */
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 0 15px rgba(162, 89, 255, 0.3);
+    box-shadow: 0 0 20px rgba(162, 89, 255, 0.4);
 }
 
 .contact-btn:hover {
-    background-color: #8b3dff;
+    background: linear-gradient(135deg, #8b3dff, #6b00ff);
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(162, 89, 255, 0.5);
+    box-shadow: 0 0 30px rgba(162, 89, 255, 0.7);
 }
 
 /* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 992px) {
+    .about-me-content {
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .about-me-content {
         flex-direction: column;
         text-align: center;
     }
 
+    .about-me-text {
+        max-width: 90%;
+    }
+
     .about-me-photo {
         width: 200px;
         height: 200px;
+    }
+
+    .about-me-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-me-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-me-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me-text p {
+        font-size: 0.95rem;
+    }
+
+    .contact-btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
     }
 }
