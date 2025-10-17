@@ -1,6 +1,5 @@
 import React from "react";
 import "./Activities.css";
-import photo from './quality.jpeg'; // your rectangular photo
 
 const Activities = () => {
     return (
@@ -9,7 +8,7 @@ const Activities = () => {
 
             <div className="activities-container">
                 <div className="activities-photo">
-                    <img src={photo} alt="Your portrait" className="profile-img" />
+                    <img src="/quality.jpeg" alt="Your portrait" className="profile-img" />
                 </div>
 
                 <div className="activities-content">
