@@ -42,21 +42,29 @@
     margin-bottom: 15px;
 }
 
+/* ---------- CONTACT BUTTON ---------- */
 .contact-btn {
     background-color: #a259ff;
     border: none;
     padding: 12px 25px;
     color: #fff;
     font-size: 1rem;
-    cursor: pointer;
     border-radius: 30px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* removes underline */
+    cursor: pointer; /* hand cursor */
+    display: inline-block; /* makes link behave like a button */
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(162, 89, 255, 0.3);
 }
 
 .contact-btn:hover {
     background-color: #8b3dff;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(162, 89, 255, 0.5);
 }
 
+/* ---------- RESPONSIVE DESIGN ---------- */
 @media (max-width: 768px) {
     .about-me-content {
         flex-direction: column;

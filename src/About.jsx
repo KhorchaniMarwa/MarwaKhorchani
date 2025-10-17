@@ -8,14 +8,14 @@ const About = () => {
             <div className="about-me-content">
                 <img src={marwaPhoto} alt="My Portrait" className="about-me-photo" />
 
-                <div className="about-me-text">
+                <div className="about-me-text" id="about">
                     <h2>Hello! I'm Marwa</h2>
                     <p>
                         I'm a passionate software engineer, full-stack developer, and problem-solver.
                         I love building interactive web applications and exploring new technologies.
                         When I'm not coding, you can find me reading, gaming, or learning new skills.
                     </p>
-                    <button className="contact-btn">Contact Me</button>
+                    <a href="#contact" className="contact-btn">Contact Me</a>
                 </div>
             </div>
         </section>

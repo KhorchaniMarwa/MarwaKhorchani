@@ -4,7 +4,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
     return (
-        <section className="hero">
+        <section id="home" className="hero">
             <div className="hero-overlay">
                 <h1 className="hero-title">Hello, I'm Marwa Khorchani</h1>
                 <p className="hero-quote">
@@ -38,8 +38,6 @@ const Home = () => {
                         <FaGithub />
                     </a>
                 </div>
-
-                {/* Buttons */}
             </div>
 
             {/* Animated Background */}
