@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import marwaPhoto from "./marwa.jpeg";
+import marwaPhoto from "./assets/marwa.jpeg";
 
 const About = () => {
     return (

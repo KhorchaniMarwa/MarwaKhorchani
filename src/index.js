@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import reportWebVitals from './reportWebVitals';
 import Projects from "./Projects";
-import profilePic from "./marwa.jpeg";
+import profilePic from "./assets/marwa.jpeg";
 import About from "./About";
 import Education from "./Education";
 import Certifications from "./Certifications";

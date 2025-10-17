@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import marwaPhoto from "./marwa.jpeg"; // replace with your image path
+import marwaPhoto from "./assets/marwa.jpeg"; // replace with your image path
 
 const About = () => {
     return (
